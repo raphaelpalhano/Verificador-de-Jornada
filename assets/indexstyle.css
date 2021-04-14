@@ -1,0 +1,225 @@
+:root{
+    --button-text: rgb(1, 8, 49);
+    --button-background: rgb(238, 248, 253);
+    --color-hover: #f8f9fc;
+    --colormain: #d8ecfc; 
+
+}
+
+
+/* aumentando espaço do main entre a aprensentação e o footer */
+main{
+    margin: 10rem 0px 10rem 0px;
+    
+}
+
+/*mensagem (alerta ajustando a posição superior) */
+.bv{
+    position: relative;
+    bottom: 7rem;
+    
+}
+
+
+#intro h2{
+    color: rgb(75, 75, 75);
+    font-size: 3.6rem;
+    line-height: 4.6rem;
+    margin: 0px 0px 2rem 0px;
+
+}
+
+section#conteudo h3{
+    font-size: 3.2rem;
+    font-weight: 510;
+    
+}
+
+/*botão de aprensentação */
+.container .button {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgb(229, 244, 250);
+    background-color: rgba(78, 98, 187, 0.938);
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 150ms linear 0s;
+    margin: 0rem 0px 1.3rem 0px;
+    
+  }
+
+  .container .button:hover{
+      background-color: rgba(90, 156, 194, 0.87);
+  }
+
+
+/*fazendo a quebra dos elementos da lista não ordenada*/
+.container ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 0px 20px 0px;
+}
+
+section#intro .container ul li{
+    list-style-type: "\1F44D";
+    margin: 1.2rem 1.4rem;
+    color: rgba(104, 113, 241, 0.87);
+    
+}
+
+section#intro p{
+    color: var(--colorparagrafo);
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    margin: 0px 0px 1.2rem;
+    
+        
+}
+
+main section{
+    margin: 0px 0px 6rem;
+    border: 1px solid rgba(192, 214, 252, 0.068); 
+}
+
+section#conteudo h3{
+    text-align: center;
+    
+    
+}
+
+#color-main{
+    background-color: rgba(107, 121, 148, 0.123);
+}
+
+
+main #conteudo img{
+    height: 250px; 
+    width:450px;
+    
+}
+
+ /* alinhando imagem e botão*/
+section#conteudo .alinhar{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;   
+}
+
+
+.textoexplicativo p{
+    text-align: justify;
+    padding: 5px;
+}
+
+/* AJUSTANDO MODAL*/
+.modal-title{
+    color: #0b2372;
+    font-size: 3.6rem;
+    font-weight: 510;
+}
+
+.modal-body p{
+    color: #2a5ce6;
+    margin: 10px;
+}
+
+.subtitle{
+    font-size: 2.6rem;
+    font-weight: 510;
+    color: #2040a8;
+    margin:10px
+    
+}
+
+
+/* seção jornada */
+section#jornada{
+    background-color: #ea6c5c;
+    padding: 15px;
+    color:var(--colormain); 
+}
+
+.alinhar .textoindicativo p{
+    text-align: center;
+    
+}
+
+ .buttonStyle1{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--button-text);
+    background-color: var(--button-background);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    align-items: baseline;
+   
+}
+
+.buttonStyle1:hover{
+    background-color: #fa8a7bea;
+    color: var(--color-hover);
+    transition: all ease 1s;
+    
+}
+
+
+
+
+/*seção até tarde */
+section#atetarde{
+    background-color: #4e4394;
+    color: var(--colormain);
+    padding: 15px;
+}
+
+.buttonStyle2{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--button-text);
+    background-color: var(--button-background);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    align-items: baseline;
+   
+}
+
+.buttonStyle2:hover{
+    background-color: #776bc9f3;
+    color: var(--color-hover);
+    transition: all ease 1s;
+}
+
+
+/*PRESSIONADO */
+
+section#pressionado{
+    background-color: rgba(1, 147,164, 1);
+    color: var(--colormain);
+
+}
+
+.textoexplicativo ol li{
+    color:#2a5ce6;
+}
+
+.buttonStyle3{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--button-text);
+    background-color: var(--button-background);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    align-items: baseline;
+
+}
+
+.buttonStyle3:hover{
+    background-color: rgba(30, 197, 216, 0.959);
+    color: var(--color-hover);
+    transition: all ease 1s;
+}

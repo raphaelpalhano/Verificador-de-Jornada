@@ -1,0 +1,121 @@
+
+
+/*MENSAGEM (ALERTA) */
+.instru{
+    position: relative;
+    bottom: 7rem;
+    
+}
+
+#intro h2{
+    color: rgb(75, 75, 75);
+    font-size: 3.6rem;
+    line-height: 4.6rem;
+    margin: 0px 0px 2rem 0px;
+
+
+}
+
+
+section#intro 
+.container ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section#intro .container ul li{
+    list-style-type: "\270D";
+    margin: 1.2rem 1.4rem;
+    color: rgba(101, 87, 230, 0.932);
+}
+
+section#intro p{
+    color: #5b37ddde;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    margin: 0px 0px 1.2rem;
+    
+        
+}
+
+main{
+    margin: 80px;
+    height: 100%;
+    background:rgba(28, 0, 129, 0.904);
+    
+}
+
+section#conteudo{
+    width: 80%;
+    max-width: 980px;
+    margin: auto;
+    display:block;
+    height: 100%;  
+    
+}
+
+
+.form-select{
+    font-size: 1.6rem;
+}
+
+.inter{
+    margin:15px;
+}
+
+
+
+section#conteudo .container-main{
+    height: 100%;
+    background-color: #ffffff;
+    padding: 1rem;
+    border: 1px solid #8694aa9d;
+    border-radius: 6px;
+    
+   
+}
+
+.form-control{
+    padding: 10px;
+    width: 100%;
+    font-size:1.6rem;
+    
+}
+
+.inter input[type="time"]{
+    margin: 0px 0px 16px 0px;
+
+}
+
+.form-select{
+    padding: 10px;
+    width: 100%;
+    font-size:1.6rem;
+    margin: 0.5rem 0px 0px;
+
+}
+
+.invalid-feedback{
+    margin: 0px 0px 2.2rem;
+}
+
+.buttonStyle{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgb(229, 244, 250);
+    background-color: rgba(106, 126, 214, 0.938);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 150ms linear 0s;
+}
+
+ button .btn{
+    margin: 20px 0px 0px 0px;
+}
+
+.buttonStyle:hover{
+    background:#a4c5e4c7;
+    color: #3e3497de;
+}
+

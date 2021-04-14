@@ -1,0 +1,165 @@
+
+
+
+/* FOOTER*/
+@media(min-width: 768px){
+    /* acessando o class rede-sociais, para manter o display flex e centralizado*/
+    footer nav .redes-sociais { 
+        display: flex;
+        justify-content: center;
+    }
+
+
+    /*mantendo o espaço entre os elementos e o tamanho em 100% */
+    footer .container{
+        width: 100%;
+        margin: 0 auto;
+        padding: 30px;
+    }
+
+   
+}
+
+
+/*SECTION APRENSENTAÇÃO */
+
+/*quando o viewport diminuir para 700 para baixo vai aplicar as condições: */
+@media(max-width: 700px){
+    
+    /*Controle do tamanho da fonte de todos elementos, pois é tag pai de todos, hierarquicamente superior as demais*/
+    html {
+        font-size: 50%;
+    }
+
+    /* definindo como os elementos vão ser colocados dentro do container, o espaço que será preenchido*/
+   /*os elementos do section#intro dentro de container, vão ser ajustados para o centro um abaixo do outro;*/
+    #intro .container{
+        flex-direction: column;
+        text-align: center;
+    }
+    /*A imagem vai aumentar de tamanho e vai ter o controle da ordem de mostrar a imagem primeiro, order: -1 quer dizer que vai trocar de posição com o primeiro elemento que iria aparecer */
+    section#intro .container img{
+        height: 405px; 
+        width:505px; 
+        order: -1;
+    }
+
+    
+}
+
+
+/*img */
+@media(max-width: 620px){
+    section#intro .container img{
+        height: 310px; 
+        width:360px; 
+}
+}
+
+
+/* HEADER*/
+@media (max-width: 540px) {
+    header nav {
+        display: none; /* não vai mostrar mais a nav no header quando chegar VW 540px*/
+    }
+
+    /*elementos dentro de header, nav menu-section, menu-toggle,  */
+    .one,
+    .two,
+    .three {
+        background-color: #fff;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+
+        transition-duration: 0.3s;
+    }
+
+
+    .menu-toggle {
+        width: 40px;
+        height: 30px;
+        margin-right: 20px;
+    }
+
+    /* fullscreen */
+    .menu-section.on {
+        position: absolute;
+        top:0;
+        left:0;
+        
+        width: 100vw;
+        height: 100vh;
+
+        background-color: #495db6b4;
+        
+        z-index: 10;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-section.on nav {
+        display: block;
+    }
+
+    .menu-section.on .menu-toggle {
+        position: absolute;
+        right: 25px;
+        top: 15px;
+    }
+
+    .menu-section.on .menu-toggle .one {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .menu-section.on .menu-toggle .two {
+        opacity: 0;
+    }
+
+    .menu-section.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(8px, -9px);
+    }
+
+    .menu-section.on nav ul {
+        text-align: center;
+        display: block;
+    }
+
+    .menu-section.on nav ul a{
+        transition-duration: 0.5s;
+        font-size: 3rem;
+        line-height: 4rem;
+        display: block;
+        
+    }
+
+}
+
+@media(max-width: 600px){
+    
+
+    .buttonStyle1{
+        padding: 5px 10px;
+        font-size: 1.5rem;
+    }
+
+    .buttonStyle3{
+        padding: 5px 10px;
+        font-size: 1.5rem;
+    }
+
+    
+    
+    .buttonStyle2{
+        padding: 5px 10px;
+        font-size: 1.5rem;
+    }
+   
+    main #conteudo img{
+        height: 200px; 
+        width:350px;
+    }
+}
+

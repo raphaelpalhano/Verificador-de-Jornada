@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/mainstyle.css">
+    <link rel="stylesheet" href="./assets/sistema.css">
+    <link rel="stylesheet" href="./assets/responsividade.css">
+   
+    <title>Raphael Angel Palhano Carballar Arevalos</title>
+</head>
+<body>
+    <body onload="instrucao()" >
+        <header>
+          <div class="container">
+             <h1><a href="./index.html"> <img src="./assets/images/imgworkicon.png" alt="icon-WorkHours" height="50"> SuaJornadaAgora</a></h1>
+            <div class="menu-section">
+              <div class="menu-toggle">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+              </div>
+              <nav>
+                <ul>
+                  <li><a href="./index.html">Painel Inicial</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </header>
+    
+        <section id="intro">
+          <div class="instru">
+            <p id="msgs"></p>
+          </div>
+    
+          <div class="container">
+            <div>
+              <h2>Preencha o Formulário e Certifique-se de Seus Direitos!</h2>
+    
+              <p>
+               Você deverá preencher o Formulário com as seguintes informações:
+              </p>
+    
+              <ul>
+                <li>Nome</li>
+                <li>Selecionar a Jornada</li>
+                <li>Hora que você entrou no serviço</li>
+                <li>Hora que você saiu do serviço</li>
+                <li>Intervalo</li>
+              </ul>
+             
+            </div>
+            <img src="./assets/images/slogan.jpg" alt="Indo além" /> 
+          </div>  
+        </section>
+
+        <main >
+
+          <section id="conteudo">
+              <div class="container-main">
+               
+                  <div class="inter">
+                    <div class="was-validated" id="formv">
+                      <div class="mb-3">
+                        <label for="validationText" class="form-label">Nome</label>
+                        <input type="text"  class="form-control is-invalid" id="validationText" placeholder="Nome" onkeyup="verficador()" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="jornadatipo"></label>
+                        <select class="form-select" id="jornadatipo" name="jornada" required aria-label="select example" onkeyup="verficador()">
+                          <option value="">Selecione sua Jornada</option>
+                          <option value="5x1">5X1</option>
+                          <option value="5x2">5X2</option>
+                          <option value="6x1">6X1</option>
+                        </select>
+                        <div class="invalid-feedback">A Jornada ainda não foi selecionada</div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="validationTime" class="form-label">Hora de Entrada</label>
+                        <input type="time"  class="form-control is-invalid" id="validationTime"  required  onkeyup="verficador()">
+                      </div>
+                      <div class="mb-3">
+                        <label for="validationTime1" class="form-label">Hora de Saída</label>
+                        <input type="time"  class="form-control is-invalid" id="validationTime1"  required  onkeyup="verficador()">
+                      </div>
+                      <div class="mb-3">
+                        <label for="validationTime2" class="form-label">Intervalo</label>
+                        <input type="time"  class="form-control is-invalid" id="validationTime2"  required  onkeyup="verficador()">
+                      </div>
+                      <div class="mb-3">
+                        <article class="media content-section">
+                          <div class="container bcontent">
+                            <input type="submit" id="botao" class="btn buttonStyle" data-toggle="modal" data-target="#sampleModal" value="Gerar Relatório" disabled onclick="relatorio()"> 
+                          <div class="modal" id="sampleModal">
+                              <div class="modal-fullscreen">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                          <h5 class="modal-title" id="titulo"></h5>
+                                         
+                                      </div>
+                                      <div class="modal-body">
+                                          <p class="text-justify" id="dados"></p>
+                                          
+                                         
+                                      </div>
+                                      <div class="modal-footer">
+                                          <button type="button" class="btn btn-outline-dark" data-dismiss="modal" id="closecontent" onclick="reload()">Fechar</button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          </div>
+                           </article> 
+        
+                      </div>
+                    </div>
+                
+                </div>
+            
+
+              </div>
+
+        
+        </section>
+
+
+        </main>
+        
+        <footer>
+          <div class="container">
+            <nav>
+              <ul class="info-contato">
+                <li>
+                  <a
+                    href="mailto: raphael1angel@hotmail.com"
+                    alt="email"
+                    title="email"
+                  >
+                    <strong>Email:</strong> raphael1angel@hotmail.com</a
+                  >
+                </li>
+                <li>
+                  <a href="tel:4855996453712" title="telefone"
+                    ><strong>Telefone:</strong> (48) 996453712</a
+                  >
+                </li>
+                
+              </ul>
+            </nav>
+  
+            <nav>
+              <ul class="redes-sociais">
+                <li>
+                  <a href="https://www.linkedin.com/in/raphael-palhano/">
+                    <img src="./assets/images/linkedin.svg" alt="Linkedin" />
+                    <p>Linkedin</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/raphaelpalhano">
+                    <img src="./assets/images/github-big-logo.svg" alt="Github" />
+                    <p>Github</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/raphael1angel/">
+                    <img src="./assets/images/instagram.svg" alt="Instagram" />
+                    <p>Instagram</p>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/channel/UCdZBR9t851F5oouQWFSFRSg/videos"
+                  >
+                    <img src="./assets/images/youtube.svg" alt="Youtube" />
+                    <p>Youtube</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/raphael.angel.94651">
+                    <img
+                      src="./assets/images/facebook-app-symbol.svg"
+                      alt="Facebook"
+                    />
+                    <p>Facebook</p>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/alerta.js"></script>
+
+    <!--VALIDAÇÃO PARA LIBERAR O BOTÃO SUBMIT DO FORMULÁRIO-->
+    <script>
+      function verficador(){
+        let nome = document.getElementById("validationText");
+        let hrent = document.getElementById("validationTime");
+        let hrsai = document.getElementById("validationTime1");
+        let intervalo = document.getElementById("validationTime2");
+        let jornada = document.querySelector("select#jornadatipo");
+        let botao = document.getElementById("botao")
+        if(jornada.value != '' && nome.value != '' && hrent.value != '' && hrsai.value != '' && intervalo.value != ''){
+          botao.disabled = false;
+          
+
+        }
+        else{
+          botao.disabled = true;
+        }
+        
+      }
+
+    </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/barramenu.js"></script>
+    <script type="text/javascript" src="assets/javascript/sistema.js"></script>
+</body>
+</html>
