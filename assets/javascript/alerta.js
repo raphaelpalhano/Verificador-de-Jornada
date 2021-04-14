@@ -1,7 +1,7 @@
 // função para verificar se a página está no index.
 window.homepage = function(){
     let verificador = false;
-    if(document.location.pathname === "/index.html"){
+    if(document.location.pathname === "/Verificador-de-Jornada/index.html"){
         verificador = true;
     }
     return verificador;
@@ -10,7 +10,7 @@ window.homepage = function(){
 // função para verificar se está na página sistema.html, tive que pesquisar, desconhecia.
 window.sistema = function(){
     let verificador = false;
-    if(document.location.pathname === "/sistemahora.html"){
+    if(document.location.pathname === "/Verificador-de-Jornada/sistemahora.html"){
         verificador = true;
     }
     return verificador;

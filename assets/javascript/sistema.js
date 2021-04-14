@@ -98,7 +98,6 @@ let Horadiaria = (entrada, saida, intervalo) => {
     let minutofor = 0;  // minuto restante
     let hora = 0; // hora restante
     let horarestante = 0; // resto total (hora com minuto);
-    let condicional = 0;
     // se o turno for o matutino, quer dizer que a hora de termino vai ser maior que a hora de entrada;
     if(termina[0] > comeca[0]){ // 
         hour = (termina[0])-comeca[0];
