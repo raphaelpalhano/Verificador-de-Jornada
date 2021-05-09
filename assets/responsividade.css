@@ -57,6 +57,36 @@
 }
 
 
+
+@media(max-width: 600px){
+    
+
+    .buttonStyle1{
+        padding: 5px 10px;
+        font-size: 1.5rem;
+    }
+
+    .buttonStyle3{
+        padding: 5px 10px;
+        font-size: 1.5rem;
+    }
+
+    
+    
+    .buttonStyle2{
+        padding: 5px 10px;
+        font-size: 1.5rem;
+    }
+   
+    main #conteudo img{
+        height: 200px; 
+        width:350px;
+    }
+}
+
+
+
+
 /* HEADER*/
 @media (max-width: 540px) {
     header nav {
@@ -75,6 +105,9 @@
         transition-duration: 0.3s;
     }
 
+    header h1 a{
+        font-size: 3.6rem;
+    }
 
     .menu-toggle {
         width: 40px;
@@ -91,11 +124,11 @@
         width: 100vw;
         height: 100vh;
 
-        background-color: #495db6b4;
+        background-color: #495db6ee;
         
         z-index: 10;
 
-        display: flex;
+        display:flex;
         justify-content: center;
         align-items: center;
     }
@@ -136,30 +169,3 @@
     }
 
 }
-
-@media(max-width: 600px){
-    
-
-    .buttonStyle1{
-        padding: 5px 10px;
-        font-size: 1.5rem;
-    }
-
-    .buttonStyle3{
-        padding: 5px 10px;
-        font-size: 1.5rem;
-    }
-
-    
-    
-    .buttonStyle2{
-        padding: 5px 10px;
-        font-size: 1.5rem;
-    }
-   
-    main #conteudo img{
-        height: 200px; 
-        width:350px;
-    }
-}
-

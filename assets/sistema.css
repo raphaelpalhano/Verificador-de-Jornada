@@ -108,6 +108,7 @@ section#conteudo .container-main{
     text-decoration: none;
     border-radius: 5px;
     transition: all 150ms linear 0s;
+    cursor: pointer;
 }
 
  button .btn{

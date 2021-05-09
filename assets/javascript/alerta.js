@@ -46,5 +46,7 @@ function instrucao(){
 
 
 
+
+
 //Seja bem vindo! Crie agora sua conta usufrua da nossa plataformar para criar seu primeiro infoproduto!
 

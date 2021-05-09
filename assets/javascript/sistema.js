@@ -74,7 +74,7 @@ let Horadiaria = (entrada, saida, intervalo) => {
     let pausahora = pausatext[0];
     let pausaminute = pausatext[1];
     
-    // se o usuário digitar apenas hora inteira no intervalo sem minutos exemplo: 01:00;
+    // se o usuário digitar apenas hora inteira no intervalo sem minutos exemplo: 01:00 ou 01:30;
     if(pausahora >= 1){
         
         inter = Math.floor(pausahora) + (pausaminute/100);
