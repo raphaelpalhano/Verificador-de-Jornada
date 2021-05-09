@@ -6,7 +6,7 @@
 
 <p> Trata de um projeto voltado para alertar os trabalhadores sobre suas jornadas de trabalho, em que cada usuário terá a possibilidade de selecionar sua jornada, entre as 3 jornadas existentes no sistema (5X1, 5X2, 6X1).</p>
 
-<p> O sistema possui um formulário em que o usuário deverá preencher hora de entrada, saída e intervalo se possuir. <br> Após o usuário preecher as informações o sistema irá cálcular e gerar a hora trabalhada diamente, semanalmente, mensalmente e anualmente, e irá verificar se está de acordo com a lei com base na jornada selecionada. </p>
+<p> O sistema possui um formulário em que o usuário deverá preencher hora de entrada, saída e intervalo se possuir. <br> Após o usuário preecher as informações o sistema irá calcular e gerar a horas diárias trabalhadas, bem como as horas semanalmente, mensalmente e anualmente, e irá verificar se está de acordo com a lei com base na jornada selecionada. </p>
 
 <br><br>
 
